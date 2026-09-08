@@ -94,6 +94,8 @@ int main()
             if (t == 'x') Huong = 1;
         }
         system("cls");
+        gotoxy(2, 1);
+        cout << "Diem so: " << (r.DoDai - 3) * 10;
         r.Ve(Qua);
         r.DiChuyen(Huong, Qua);
         Sleep(200);
