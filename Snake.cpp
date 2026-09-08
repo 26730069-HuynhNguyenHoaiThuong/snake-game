@@ -107,8 +107,8 @@ int main()
 void gotoxy( int column, int line )
 {
     COORD coord;
-    coord.X = column;
-    coord.Y = line;
+    coord.X = static_cast<SHORT>(column);
+    coord.Y = static_cast<SHORT>(line);
     SetConsoleCursorPosition(
         GetStdHandle( STD_OUTPUT_HANDLE ),
         coord
