@@ -13,7 +13,7 @@
 | :--- | :--- | :---: | :--- | :---: | :--- |
 | **SV1 (Trưởng nhóm)** | **Huỳnh Nguyễn Hoài Thương** | `26730069` | [`26730069-HuynhNguyenHoaiThuong`](https://github.com/26730069-HuynhNguyenHoaiThuong) | `main` | Định hướng cấu trúc dự án, điều phối nhóm, review code và chốt merge Pull Request |
 | **SV2 (Thành viên)** | **Nguyễn Ngọc Duy** | `26730013` | [`26730013-NguyenNgocDuy`](https://github.com/26730013-NguyenNgocDuy) | `Ve-Khung` | Xây dựng hàm `VeKhung()` hiển thị viền bàn chơi cố định trên Console |
-| **SV3 (Thành viên)** | **Phạm Phú Nguyễn Hưng** | `26730023` | [`26730023-PhamPhuNguyenHung`](https://github.com/26730023-PhamPhuNguyenHung)) | `An-Moi` | Xử lý logic sinh mồi ngẫu nhiên (`Point Qua`), cơ chế rắn ăn mồi tăng độ dài và tính điểm thời gian thực |
+| **SV3 (Thành viên)** | **Phạm Phú Nguyễn Hưng** | `26730023` | [`26730023-PhamPhuNguyenHung`](https://github.com/26730023-PhamPhuNguyenHung) | `An-Moi` | Xử lý logic sinh mồi ngẫu nhiên (`Point Qua`), cơ chế rắn ăn mồi tăng độ dài và tính điểm thời gian thực |
 
 ## 🧱 Chi Tiết Function `VeKhung()` (SV2: Nguyễn Ngọc Duy)
 
