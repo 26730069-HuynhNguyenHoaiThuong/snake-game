@@ -15,6 +15,26 @@
 | **SV2 (Thành viên)** | **Nguyễn Ngọc Duy** | `26730013` | [`26730013-NguyenNgocDuy`](https://github.com/26730013-NguyenNgocDuy) | `Ve-Khung` | Xây dựng hàm `VeKhung()` hiển thị viền bàn chơi cố định trên Console |
 | **SV3 (Thành viên)** | **Phạm Phú Nguyễn Hưng** | `26730023` | [`hungpixi`](https://github.com/hungpixi) | `An-Moi` | Xử lý logic sinh mồi ngẫu nhiên (`Point Qua`), cơ chế rắn ăn mồi tăng độ dài và tính điểm thời gian thực |
 
+## 🧱 Chi Tiết Function `VeKhung()` (SV2: Nguyễn Ngọc Duy)
+
+Function `VeKhung()` có nhiệm vụ vẽ khung cố định bao quanh khu vực chơi trên màn hình Console. Khung giúp người chơi nhận biết giới hạn di chuyển của rắn và tạo ranh giới trực quan cho bàn chơi.
+
+1. **Xác định kích thước khung**:
+   - Sử dụng các hằng số `MINX = 2`, `MINY = 2`, `MAXX = 35` và `MAXY = 20`.
+   - Khung có tọa độ từ `(2, 2)` đến `(35, 20)` trên Console.
+2. **Thuật toán vẽ viền**:
+   - Duyệt toàn bộ các tọa độ trong phạm vi từ `MINX` đến `MAXX` và từ `MINY` đến `MAXY`.
+   - Chỉ in ký tự `+` tại hàng trên, hàng dưới, cột trái và cột phải:
+     - `i == MINX` hoặc `i == MAXX` là hai cạnh dọc.
+     - `j == MINY` hoặc `j == MAXY` là hai cạnh ngang.
+   - Function `gotoxy(i, j)` đưa con trỏ đến đúng vị trí trước khi in ký tự.
+3. **Phối hợp với nhánh `An-Moi`**:
+   - Khung bao phủ vùng sinh mồi của nhánh `An-Moi`, trong đó mồi được sinh tại `x` từ 5 đến 34 và `y` từ 3 đến 17.
+   - Nhờ đó, rắn và mồi xuất hiện bên trong khu vực chơi, không che lên đường viền.
+4. **Kết quả**:
+   - Mỗi vòng lặp game gọi lại `VeKhung()` sau khi xóa màn hình bằng `system("cls")`, bảo đảm khung luôn được hiển thị ổn định.
+   - Function chỉ chịu trách nhiệm vẽ khung, tách biệt với logic di chuyển, sinh mồi và tính điểm.
+
 ---
 
 ## 🎯 Chi Tiết Tính Năng Nhánh `An-Moi` (SV3: Phạm Phú Nguyễn Hưng)
